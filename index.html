@@ -20,7 +20,26 @@
             margin: auto;
         }
         
+        
     </style>
+
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Adjust the gap between videos */
+        }
+
+        .video {
+            flex: 1; /* Ensures that the videos take up equal space */
+        }
+
+        iframe {
+            width: 100%; /* Makes video responsive within the container */
+            height: 315px; /* Adjust height as needed */
+        }
+    </style>
+
 </head>
 <body>
 
@@ -33,23 +52,36 @@
 <article>
     <section>
         <h2>About Me</h2>
-        <p>Hey there! I'm a computational researcher and PhD candidate specializing in machine learning applied biomolecular simulations. I have worked with a variety of nucleic acid and protein systems at the atomistic and coarse-grained levels, and I am generally interested in leveraging machine learning to expand the spaciotemporal resolution of molecular simulations. Please see a summary of my work and links to my publications below:</p>
+        <p>I'm a computational researcher and PhD candidate at the University of Chicago, specializing in machine learning applied biomolecular simulations. I have worked with a variety of nucleic acid and protein systems at the atomistic and coarse-grained levels, and I am generally interested in leveraging machine learning to expand the spaciotemporal resolution of molecular simulations. Please see a summary of my work and links to my publications below:</p>
     </section>
     
     <section>
-        <h2>PhD Research</h2>
+        <h2>Published PhD Research</h2>
         <p>Select (co) first-author papers: </p>
         <ul>
-            <li>DiAMoNDBack: Diffusion-Denoising Autoregressive Model for Non-Deterministic Backmapping of Protein Traces (J. Chem. Theory Comput. 2023, 19, 21, 7908–7923)   <a href="https://pubs.acs.org/doi/full/10.1021/acs.jctc.3c00840">Paper</a> <a href="https://github.com/Ferg-Lab/DiAMoNDBack">Code</a>
+            <li>DiAMoNDBack: Diffusion-Denoising Autoregressive Model for Non-Deterministic Backmapping of Protein Traces (J. Chem. Theory Comput. 2023, 19, 21, 7908–7923)   <a href="https://pubs.acs.org/doi/full/10.1021/acs.jctc.3c00840">Paper </a> </li>
+            <li>DiAMoNDBack is an autoregressive denoising diffusion model for generative backmapping of protein traces, enabling the reconstruction of detailed atomic structures from coarse-grained models. </li>
+                
                 <br>
                 <div style="text-align: center;">
                     <img src="./images/dback_toc.jpeg" alt="DiAMoNDBack Paper Thumbnail" style="width:400px; height:auto;">
                 </div>
+                <!--<ul>
+                    <li>DiAMoNDBack is an autoregressive denoising diffusion model for generative backmapping of protein traces, enabling the reconstruction of detailed atomic structures from coarse-grained models.</li>
+                    <li>We demonstrate superior performance over existing generative and rules-based models in bond quality, steric clashes, and generative diversity.</li>
+                    <li>Our model produces high quality structures when applied to experimental and simulation-derived dataset, and is available on <a href="https://github.com/Ferg-Lab/DiAMoNDBack">Github</a></li>
+                </ul> -->
             </li>
             <li>Disruption of energetic and dynamic base pairing cooperativity in DNA duplexes by an abasic site (PNAS 2023, 120, ,14, e2219124120)   <a href="https://www.pnas.org/doi/pdf/10.1073/pnas.2219124120">Paper</a> 
                 <br>
                 <div style="text-align: center;">
-                <img src="./images/pnas_toc.jpg" alt="Abasic Paper Thumbnail" style="width:400px; height:auto;">
+                    <img src="./images/pnas_toc.jpg" alt="Abasic Paper Thumbnail" style="width:400px; height:auto;">
+                </div>
+                <!--<ul>
+                    <li>By combining temperature-jump Spectroscopy with coarse-grained simulations, we probe impact of an abasic site on the kinetics and thermodynamics of DNA hybridization</li>
+                    <li>We accelerates sampling of the hybridization process using metadynamcis and predict populations of states in agreement with experiment.</li>
+                    <li>We use Markov State Models to identify the kinetic signature of a novel metastable stable that facilitates hybridization in some abasic sequences</li>
+                </ul> -->
             </li>
             <li>Molecular Latent Space Simulators for Distributed and Multimolecular Trajectories (J. Phys. Chem. A 2023, 127, 25, 5470–5490)   <a href="https://pubs.acs.org/doi/full/10.1021/acs.jpca.3c01362">Paper</a> 
                 <br>
@@ -69,12 +101,25 @@
         <h2>Internships</h2>
         <p>Here are some projects I've worked on:</p>
         <ul>
-            <li>Lawrence Livermore National Lab -- National Ignition Facility (2023)<a href="https://ui.adsabs.harvard.edu/abs/2023APS..DPPTI2001G/abstract">Conference Paper</a> </li>
-            <li>Pratt & Whitney -- Dangerous chemical management (2018) </li>
-            <li>Aslyum Research -- Application Science (electrochemistry) (2017) <a href="https://www.oxinst.com/news/ec-corrosion-app-note/">Application Note</a></li>
+            <li>Lawrence Livermore National Lab -- National Ignition Facility (2023) <a href="https://ui.adsabs.harvard.edu/abs/2023APS..DPPTI2001G/abstract">Conference Paper</a> 
+                <br>
+                <div style="text-align: center;">
+                <img src="./images/ignition.png" alt="Abasic Paper Thumbnail" style="width:400px; height:auto;">
+            </li>
+            <li>Pratt & Whitney -- Hazardous chemical data management (2018)
+                <br>
+                <div style="text-align: center;">
+                <img src="./images/pw.jpg" alt="Abasic Paper Thumbnail" style="width:300px; height:auto;">
+            </li>
+            <li>Aslyum Research -- Application Science (electrochemistry) (2017) <a href="https://www.oxinst.com/news/ec-corrosion-app-note/">Application Note</a>                
+                <br>
+                <div style="text-align: center;">
+                <img src="./images/corrosion_app_note.png" alt="Abasic Paper Thumbnail" style="width:300px; height:auto;">
+            </li>
             <!-- Add more projects as needed -->
         </ul>
     </section>
+
 
     <section>
         <h2>Random Projects</h2>
@@ -87,6 +132,16 @@
             <!-- Add more projects as needed -->
         </ul>
     </section>
+
+    <div class="video-container">
+        <div class="video">
+            <iframe src="https://youtu.be/3jehlemlISI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe src="https://youtu.be/-pmMLoG6sRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
 </article>
 
 <footer>
