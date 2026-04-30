@@ -1,165 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mike Jones</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
-        header, footer {
-            text-align: center;
-            margin: 20px 0;
-        }
-        article {
-            text-align: left;
-            max-width: 800px;
-            margin: auto;
-        }
-        
-        
-    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            background: #f7f9fc;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        header img {
+            width: 220px;
+            border-radius: 50%;
+            margin-top: 20px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+        }
+
+        article {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            margin-top: 0;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 10px;
+            margin-top: 10px;
+            max-width: 100%;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .paper {
+            margin-bottom: 25px;
+        }
+
         .video-container {
             display: flex;
-            justify-content: center;
-            gap: 20px; /* Adjust the gap between videos */
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
 
         .video {
-            flex: 1; /* Ensures that the videos take up equal space */
+            flex: 1 1 400px;
         }
 
         iframe {
-            width: 100%; /* Makes video responsive within the container */
-            height: 315px; /* Adjust height as needed */
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 22px;
+        }
+
+        .icon-link {
+            margin: 0 10px;
+            color: #444;
+        }
+
+        .icon-link:hover {
+            color: #2563eb;
         }
     </style>
-
 </head>
+
 <body>
 
 <header>
     <h1>Mike Jones</h1>
-    <p></p>
-    <img src="./images/linkedin_headshot.jpg" alt="Headshot of Mike Jones" style="width: 250px; height: auto;">
+    <p>Computational researcher & PhD candidate | Machine Learning for Molecular & Physical Systems</p>
+    <img src="./images/linkedin_headshot.jpg" alt="Headshot of Mike Jones">
 </header>
 
 <article>
-    <section>
-        <h2>About Me</h2>
-        <p>I'm a computational researcher and PhD candidate at the University of Chicago, specializing in machine learning applied biomolecular simulations. I have worked with a variety of nucleic acid and protein systems at the atomistic and coarse-grained levels, and I am generally interested in leveraging machine learning to expand the spaciotemporal resolution of molecular simulations. Please see a summary of my work and links to my publications below:</p>
-    </section>
-    
-    <section>
-        <h2>Published PhD Research</h2>
-        <p>Select (co) first-author papers: </p>
-        <ul>
-            <li>DiAMoNDBack: Diffusion-Denoising Autoregressive Model for Non-Deterministic Backmapping of Protein Traces (J. Chem. Theory Comput. 2023, 19, 21, 7908–7923)   <a href="https://pubs.acs.org/doi/full/10.1021/acs.jctc.3c00840">Paper </a> </li>
-            <li>DiAMoNDBack is an autoregressive denoising diffusion model for generative backmapping of protein traces, enabling the reconstruction of detailed atomic structures from coarse-grained models. </li>
-                
-                <br>
-                <div style="text-align: center;">
-                    <img src="./images/dback_toc.jpeg" alt="DiAMoNDBack Paper Thumbnail" style="width:400px; height:auto;">
-                </div>
-                <!--<ul>
-                    <li>DiAMoNDBack is an autoregressive denoising diffusion model for generative backmapping of protein traces, enabling the reconstruction of detailed atomic structures from coarse-grained models.</li>
-                    <li>We demonstrate superior performance over existing generative and rules-based models in bond quality, steric clashes, and generative diversity.</li>
-                    <li>Our model produces high quality structures when applied to experimental and simulation-derived dataset, and is available on <a href="https://github.com/Ferg-Lab/DiAMoNDBack">Github</a></li>
-                </ul> -->
-            </li>
-            <li>Disruption of energetic and dynamic base pairing cooperativity in DNA duplexes by an abasic site (PNAS 2023, 120, ,14, e2219124120)   <a href="https://www.pnas.org/doi/pdf/10.1073/pnas.2219124120">Paper</a> 
-                <br>
-                <div style="text-align: center;">
-                    <img src="./images/pnas_toc.jpg" alt="Abasic Paper Thumbnail" style="width:400px; height:auto;">
-                </div>
-                <!--<ul>
-                    <li>By combining temperature-jump Spectroscopy with coarse-grained simulations, we probe impact of an abasic site on the kinetics and thermodynamics of DNA hybridization</li>
-                    <li>We accelerates sampling of the hybridization process using metadynamcis and predict populations of states in agreement with experiment.</li>
-                    <li>We use Markov State Models to identify the kinetic signature of a novel metastable stable that facilitates hybridization in some abasic sequences</li>
-                </ul> -->
-            </li>
-            <li>Molecular Latent Space Simulators for Distributed and Multimolecular Trajectories (J. Phys. Chem. A 2023, 127, 25, 5470–5490)   <a href="https://pubs.acs.org/doi/full/10.1021/acs.jpca.3c01362">Paper</a> 
-                <br>
-                <div style="text-align: center;">
-                <img src="./images/lss_toc.jpeg" alt="Abasic Paper Thumbnail" style="width:400px; height:auto;">
-            </li>
-            <li>Determining Sequence-Dependent DNA Oligonucleotide Hybridization and Dehybridization Mechanisms Using Coarse-Grained Molecular Simulation, Markov State Models, and Infrared Spectroscopy (J. Am. Chem. Soc. 2021, 143, 42, 17395–17411) <a href="https://pubs.acs.org/doi/full/10.1021/jacs.1c05219">Paper</a> 
-                <br>
-                <div style="text-align: center;">
-                <img src="./images/dna_toc.jpeg" alt="Abasic Paper Thumbnail" style="width:400px; height:auto;">
-            </li>
-            <!-- Add more projects as needed -->
-        </ul>
-    </section>
 
-    <section>
-        <h2>Internships</h2>
-        <p>Here are some projects I've worked on:</p>
-        <ul>
-            <li>Lawrence Livermore National Lab -- National Ignition Facility (2023) <a href="https://ui.adsabs.harvard.edu/abs/2023APS..DPPTI2001G/abstract">Conference Paper</a> 
-                <br>
-                <div style="text-align: center;">
-                <img src="./images/ignition.png" alt="Abasic Paper Thumbnail" style="width:400px; height:auto;">
-            </li>
-            <li>Pratt & Whitney -- Hazardous chemical data management (2018)
-                <br>
-                <div style="text-align: center;">
-                <img src="./images/pw.jpg" alt="Abasic Paper Thumbnail" style="width:300px; height:auto;">
-            </li>
-            <li>Aslyum Research -- Application Science (electrochemistry) (2017) <a href="https://www.oxinst.com/news/ec-corrosion-app-note/">Application Note</a>                
-                <br>
-                <div style="text-align: center;">
-                <img src="./images/corrosion_app_note.png" alt="Abasic Paper Thumbnail" style="width:300px; height:auto;">
-            </li>
-            <!-- Add more projects as needed -->
-        </ul>
-    </section>
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a computational researcher and PhD candidate at the University of Chicago, focused on applying machine learning to biomolecular and physical simulations. My work centers on developing generative models to expand the spatial and temporal resolution of molecular systems across atomistic and coarse-grained representations.
+    </p>
+</section>
 
+<section>
+    <h2>Published PhD Research</h2>
 
-    <section>
-        <h2>Random Projects</h2>
-        <p>Exploring Chicago via drone, bike, and data</p>
-        <ul>
-            <li>Exploring Chicago Neighborhoods by Google Pings  <a href="https://www.reddit.com/r/dataisbeautiful/comments/uqksuy/oc_all_of_my_google_timeline_pings_from_the_last/?utm_source=share&utm_medium=web2x&context=3">Map</a></li>
-            <li>Chicago CTA bus tracking  <a href="https://www.reddit.com/r/MapPorn/comments/ytjikk/location_of_all_buses_in_chicago_over_a_24hour/?utm_source=share&utm_medium=web2x&context=3">Map</a></li>
-            <li>Live tracking a 60-mile Chicago bike ride  <a href="https://youtu.be/3jehlemlISI">Video</a></li>
-            <li>Drone Compilation <a href="https://youtu.be/-pmMLoG6sRs">Video</a></li>
-            <!-- Add more projects as needed -->
-        </ul>
-    </section>
+    <div class="paper">
+        <strong>DiAMoNDBack: Diffusion-Denoising Autoregressive Model for Backmapping</strong><br>
+        <a href="https://pubs.acs.org/doi/full/10.1021/acs.jctc.3c00840">Paper</a>
+        <img src="./images/dback_toc.jpeg">
+    </div>
+
+    <div class="paper">
+        <strong>Disruption of base pairing cooperativity in DNA duplexes</strong><br>
+        <a href="https://www.pnas.org/doi/pdf/10.1073/pnas.2219124120">Paper</a>
+        <img src="./images/pnas_toc.jpg">
+    </div>
+
+    <div class="paper">
+        <strong>Molecular Latent Space Simulators</strong><br>
+        <a href="https://pubs.acs.org/doi/full/10.1021/acs.jpca.3c01362">Paper</a>
+        <img src="./images/lss_toc.jpeg">
+    </div>
+
+    <div class="paper">
+        <strong>DNA Hybridization Mechanisms via Simulation & Spectroscopy</strong><br>
+        <a href="https://pubs.acs.org/doi/full/10.1021/jacs.1c05219">Paper</a>
+        <img src="./images/dna_toc.jpeg">
+    </div>
+
+</section>
+
+<section>
+    <h2>Internships</h2>
+
+    <div class="paper">
+        <strong>Lawrence Livermore National Laboratory — NIF (2023)</strong><br>
+        <a href="https://ui.adsabs.harvard.edu/abs/2023APS..DPPTI2001G/abstract">Conference Paper</a>
+        <img src="./images/ignition.png">
+    </div>
+
+    <div class="paper">
+        <strong>Pratt & Whitney — Chemical Data Systems (2018)</strong>
+        <img src="./images/pw.jpg">
+    </div>
+
+    <div class="paper">
+        <strong>Asylum Research — Electrochemistry Applications (2017)</strong><br>
+        <a href="https://www.oxinst.com/news/ec-corrosion-app-note/">Application Note</a>
+        <img src="./images/corrosion_app_note.png">
+    </div>
+
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <ul>
+        <li>Exploring Chicago via Google Timeline <a href="https://www.reddit.com/r/dataisbeautiful/comments/uqksuy/">Map</a></li>
+        <li>CTA Bus Tracking <a href="https://www.reddit.com/r/MapPorn/comments/ytjikk/">Map</a></li>
+        <li>60-mile Bike Ride Tracking <a href="https://youtu.be/3jehlemlISI">Video</a></li>
+        <li>Drone Compilation <a href="https://youtu.be/-pmMLoG6sRs">Video</a></li>
+    </ul>
 
     <div class="video-container">
         <div class="video">
-            <iframe src="https://youtu.be/3jehlemlISI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/3jehlemlISI"></iframe>
         </div>
         <div class="video">
-            <iframe src="https://youtu.be/-pmMLoG6sRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/-pmMLoG6sRs"></iframe>
         </div>
     </div>
+
+</section>
 
 </article>
 
 <footer>
-    <a href="https://www.linkedin.com/in/mike-jones2/" class="icon-link" style="font-size: 24px;">
+    <a href="https://www.linkedin.com/in/mike-jones2/" class="icon-link">
         <i class="fab fa-linkedin"></i>
     </a>
-    
-    <!-- Email -->
-    <a href="mailto:mikejones@uchicago.edu" class="icon-link" style="font-size: 24px;">
+
+    <a href="mailto:mikejones@uchicago.edu" class="icon-link">
         <i class="fas fa-envelope"></i>
     </a>
 
-    <!-- Scholar (need toto find images searbn)-->
-    <a href="https://scholar.google.com/citations?user=YourScholarID" class="icon-link" style="font-size: 24px;">
+    <a href="https://scholar.google.com/" class="icon-link">
         <i class="fas fa-graduation-cap"></i>
     </a>
-
-    <!-- <p>Contact me at <a href="mailto:mikejones@uchicago.edu">mikejones@uchicago.edu</a></p> -->
 </footer>
 
 </body>
